@@ -20,7 +20,7 @@ You need a bundler that:
 ionic start simple-iso blank --type=react --vite --capacitor
 
 
-bun add jolt-physics three
+bun add jolt-physics three @openfluke/isocard
 
 # If developing isocard locally
 bun add isocard@link:isocard

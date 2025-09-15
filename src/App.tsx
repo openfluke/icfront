@@ -32,7 +32,9 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Simple from './Simple';
+import Simple from './pages/Simple';
+import ClientIsoCardWatcher from './pages/ClientIsoCardWatcher';
+
 
 setupIonicReact();
 
@@ -43,8 +45,11 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
-           <Route exact path="/simple">
+        <Route exact path="/simple">
           <Simple />
+        </Route>
+         <Route exact path="/client">
+          <ClientIsoCardWatcher />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
